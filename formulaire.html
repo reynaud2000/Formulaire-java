@@ -14,9 +14,11 @@
         <div class = "inner-form" role = "form">
             <fieldset>
                 <legend>Remplir le formulaire</legend>
-                <form action="https://www.google.fr/searche?" method="post">
-                    <input type="text" name = "nom" placeholder="Nom" aria-required="true">
-                    <input type="date" name="date" placeholder="Date" aria-required="true">
+                <form action="https://www.google.fr/searche?" method="get">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name = "q" placeholder="Nom" aria-required="true">
+                    <label for="date">Date</label>
+                    <input type="date" id ="date" name="date" placeholder="Date" aria-required="true">
                     <input type="submit" value="Envoyer">
                 </form>
             </fieldset>
