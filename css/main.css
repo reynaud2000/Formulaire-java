@@ -1,0 +1,106 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+h1,h2,h3,p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+input,input[type="submit"], button{
+    border: 0;
+    background-color: transparent;
+    font-size: inherit;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+fieldset{
+    border: solid .1rem transparent;
+}
+*{
+    box-sizing: border-box;
+}
+/* theme de la page  */
+:root{
+    --color-theme-main: #3B5998;
+    --color-theme-secondary: #8B9DC3;
+    --color-theme-last: #DFE3EE;
+    --color-theme-default: #ccc;
+}
+header{
+    background-color: var(--color-theme-main);
+}
+header h1{
+    line-height: 6.5rem;
+    text-align: center;
+    color: var(--color-theme-last);
+}
+main .inner-form{
+    max-width: 80rem;
+    margin: 5rem auto 0;
+    padding: 2rem;
+}
+fieldset legend{
+    font-size: 2rem;
+    padding: 1rem;
+}
+fieldset{
+    padding: 1rem;
+    border: solid .1rem var(--color-theme-main);
+    border-radius: .4rem;
+}
+fieldset form *{
+    display: block;
+    width: 100%;
+    line-height: 3.5rem;
+    border: solid .1rem #ccc;
+    margin-bottom: .5rem;
+}
+fieldset form label, fieldset small{
+    border: 0;
+}
+fieldset form input[placeholder]{
+    font-style: italic;
+    transition-duration: 0.5s;
+}
+fieldset form input[placeholder]:focus{
+    outline: 0;
+    box-shadow: 0 0 1rem #8B9DC3;
+}
+fieldset form input[type="submit"]{
+    background-color: var(--color-theme-main);
+    color: #DFE3EE;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+fieldset form input{
+    padding: .5rem;
+}
+
+fieldset form input[type="submit"]{
+    background-color: var(--color-theme-main);
+    color: #DFE3EE;
+    line-height: 4.5rem;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+fieldset form input{
+    padding: .5rem;
+}
+
+footer{
+    text-align: center;
+}
